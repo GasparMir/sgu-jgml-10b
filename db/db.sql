@@ -1,0 +1,11 @@
+CREATE DATABASE IF NOT EXISTS `sgu-database`;
+USE `sgu-database`;
+
+CREATE TABLE IF NOT EXISTS users (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    name VARCHAR(100) UNIQUE,
+    lastname VARCHAR(100) UNIQUE,
+    surname VARCHAR(100) UNIQUE,
+    email VARCHAR(300) UNIQUE,
+    tel VARCHAR(20) UNIQUE,
+);
